@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Container, Typography } from "@mui/material";
+import "./App.css";
+import ElevateAppBar from "./components/AppBar";
+import PersistentDrawerLeft from "./components/Basicdrawer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersistentDrawerLeft />
+      <ElevateAppBar />
+      <Box sx={{ mx: 20, my: 20 }}>
+        <Typography paragraph variant="h4">
+          Using App Bar.
+        </Typography>
+        <Typography paragraph variant="h4">
+          Using Drawers.
+        </Typography>
+      </Box>
     </div>
   );
 }
