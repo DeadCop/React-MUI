@@ -16,9 +16,12 @@ import MenuItem from "@mui/material/MenuItem";
 import { makeStyles } from "@mui/styles";
 
 function Appbar({ compChange }) {
-
   return (
-    <AppBar position="fixed" elevation={1} style={{background:"rgba(255, 255, 255, .7)"}}>
+    <AppBar
+      position="fixed"
+      elevation={1}
+      style={{ background: "rgba(255, 255, 255, .7)" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}></Box>

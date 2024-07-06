@@ -2,7 +2,7 @@ import { Box, Container, Typography } from "@mui/material";
 import "./App.css";
 import ElevateAppBar from "./components/AppBar";
 import PersistentDrawerLeft from "./components/Basicdrawer";
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./main";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <div>
           <Routes>
-            <Route path = "/" element = {<Main />} />
+            <Route path="/" element={<Main />} />
           </Routes>
         </div>
       </Router>

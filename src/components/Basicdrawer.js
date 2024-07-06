@@ -23,27 +23,27 @@ import { makeStyles } from "@mui/styles";
 const useStyles = makeStyles(() => ({
   drawer: {},
   drawerPaper: {
-    width: 200
+    width: 200,
   },
   drawerHeader: {
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
-    marginBottom: ".5em"
+    marginBottom: ".5em",
   },
   drawerBrandingText: {
     fontSize: "1.25em",
     fontWeight: 600,
     userSelect: "none",
-    "&:hover": {}
+    "&:hover": {},
   },
   drawerListItem: {
     userSelect: "none",
-    cursor: "pointer"
+    cursor: "pointer",
   },
   listSubheader: {
-    marginTop: "1em"
-  }
+    marginTop: "1em",
+  },
 }));
 
 const drawerWidth = 200;
@@ -52,14 +52,14 @@ export default function LeftBar() {
   const classes = useStyles();
   return (
     <Drawer
-    className={classes.drawer}
-    classes={{ paper: classes.drawerPaper }}
-    variant="permanent"
-    anchor="left"
-  >
-    <Toolbar className={classes.drawerHeader}>
-      <Typography className={classes.drawerBrandingText}>App Name</Typography>
-    </Toolbar>
-  </Drawer>
+      className={classes.drawer}
+      classes={{ paper: classes.drawerPaper }}
+      variant="permanent"
+      anchor="left"
+    >
+      <Toolbar className={classes.drawerHeader}>
+        <Typography className={classes.drawerBrandingText}>App Name</Typography>
+      </Toolbar>
+    </Drawer>
   );
 }
