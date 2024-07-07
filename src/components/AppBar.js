@@ -18,7 +18,7 @@ import { makeStyles } from "@mui/styles";
 function Appbar({ compChange }) {
   return (
     <AppBar
-      position="fixed"
+      position="sticky"
       elevation={1}
       style={{ background: "rgba(255, 255, 255, .7)" }}
     >
